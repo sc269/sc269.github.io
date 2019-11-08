@@ -1,0 +1,127 @@
+div#pagecontent {
+	grid-area: content;
+	display: flex;
+	flex-direction: row;
+}
+
+/*----------------Atricles----------------*/
+/*
+<a href="" class="any" target="_blank"></a>
+<div style="min-height: 350px; height: 50vw; width: 100%; margin: 20px; background: url('../../../images/8.5/image1.jpeg') center no-repeat; background-size: contain;"></div>
+style="width: 100%; height: 50vw;"
+*/
+div#art-wrap {
+	width: 80%;
+}
+
+article.schl-inf {
+	margin: 2px;
+	padding: 15px;
+	height: auto;
+	font-family: times, sylfaen, georgia, serif;
+	font-size: 24px;
+	border-left: none;
+    border-right: none;
+}
+
+h3, p {
+	margin-left: 10px;
+}
+h1.pagename {
+	text-align: center;
+	background-blend-mode: ;
+}
+
+div.schl-image-2 {
+	background: url("../images/growing.jpg") no-repeat center;
+    background-size: contain;
+    width: 100%;
+    height: 700px;
+    margin: 0;
+}
+
+.any-image {
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+}
+/*----------------Contacts----------------*/
+
+div#contacts {
+	width: 20%;
+}
+
+span.linkname {
+	margin: 20px 8px;
+	padding-left: 5px;
+	display: block;
+	cursor: pointer;
+}
+
+a.cont-link {
+	max-width: 175px;
+}
+
+a.cont-link:link, a.cont-link:visited {
+	color: black;
+	text-decoration: none;
+}
+
+a.cont-link:hover {
+	color: grey;
+}
+
+.box {
+	margin-top: 10px;
+}
+
+/*--------------------Other----------------------*/
+
+div.any-image {
+	background-image:;
+}
+a.any {
+	margin: 3px;
+	font-size: 26px;
+}
+a.any:link, a.any:visited {
+	color: #4E4E4E;
+	text-decoration: none;
+}
+
+a.any:hover {
+	color: #FF6C00;
+}
+
+table {border-collapse: collapse;}
+.tcell {border: 1px solid black;}
+.tfont-down {font-size: 14px;}
+.tlink {
+	color: black;
+	font-size: 16px;
+	text-decoration: none;
+	font-weight: bold;
+}
+.tlink:hover {color: #FF6C00;}
+.li-style {margin: 15px;}
+/*----------------Media queries----------------*/
+
+@media all and (max-width: 800px) {
+
+	div#pagecontent {
+		flex-direction: column;
+	}
+
+	div#art-wrap {
+		width: auto;
+	}
+
+	div#contacts {
+		width: auto;
+		max-height: 300px;
+		margin-top: 0px;
+	}
+	span.linkname {
+		padding-left: 10px;
+	}
+}
